@@ -15,9 +15,11 @@
 
     <header>
 
-        <h1>Galeria de Paisagens</h1>
+        <h1>Galeria de Coleções</h1><br>
 
-        <p>Carrossel feito apenas com HTML e CSS</p>
+        <p>Aqui você encontra uma galeria de box de livros que você deveria testar.
+        Se perca nas histórias contadas em cada um deles e descobra novos universos e histórias!
+        </p>
 
     </header>
 
@@ -27,115 +29,315 @@
         <h2>Conheça nossas paisagens</h2>
 
 
-        <!-- BOTÕES INVISÍVEIS -->
+        <!-- CARROSSEL - O POVO DO AR -->
+        <h1> O povo do ar</h1>
+        <section class="carrossel povodoar">
 
-        <input type="radio" name="carrossel" id="slide1" checked>
+            <!-- BOTÕES INVISÍVEIS (próprios deste carrossel) -->
 
-        <input type="radio" name="carrossel" id="slide2">
+            <input type="radio" name="povodoar" id="povodoar-slide1" checked>
+            <input type="radio" name="povodoar" id="povodoar-slide2">
+            <input type="radio" name="povodoar" id="povodoar-slide3">
+            <input type="radio" name="povodoar" id="povodoar-slide4">
+            <input type="radio" name="povodoar" id="povodoar-slide5">
 
-        <input type="radio" name="carrossel" id="slide3">
+            <div class="slides">
 
-        <input type="radio" name="carrossel" id="slide4">
+                <figure class="slide">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz_8OJSAD1nUPRvOIHsGKAiNpESQm4izeyJ1z9efR2EQ&s=10"
+                        alt="O Povo do Ar - box completo"
+                    >
+                    <figcaption>
+                        O box de O Povo do Ar contém uma quatro livros principais e un spin-off. Nessa saga, a autora Holly Black transporta os leitores para o Reino das Fadas. Não aquelas dos contos clássicos, fadas que podem ser cruéis e mortais, especialmente se motivadas pelo poder. Uma aventura que mistura magia, intrigas palacianas e romance.
+                    </figcaption>
+                </figure>
 
-        <input type="radio" name="carrossel" id="slide5">
+                <figure class="slide">
+                    <img
+                        src="https://m.media-amazon.com/images/I/815XbqffvfS._SL1500_.jpg"
+                        alt="O canto mais bem escuro da floresta"
+                    >
+                    <figcaption>
+                        Hazel e seu irmão, Ben, moram em uma cidade onde humanos e fadas convivem. A magia aparentemente inofensiva desses seres atrai turistas de todas as partes, que querem ver de perto as maravilhas do lugar e, principalmente, o garoto de chifres e orelhas pontudas que descansa em um caixão de vidro. Hazel e Ben eram fascinados pelo garoto quando crianças. Mas, eles sabem que o garoto de chifres nunca acordará… Até que um dia ele acorda. Agora, os irmãos precisam se tornar os heróis que fingiam ser e desvendar os mistérios que envolvem aquele príncipe com chifres.
+                    </figcaption>
+                </figure>
 
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/42/1000/600" alt="Paisagem natural">
+                    <figcaption>Um cenário tranquilo em meio à natureza.</figcaption>
+                </figure>
 
-        <!-- CARROSSEL -->
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/1015/1000/600" alt="Montanhas e rio">
+                    <figcaption>Um rio passando entre grandes montanhas.</figcaption>
+                </figure>
 
-        <section class="carrossel">
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/1018/1000/600" alt="Paisagem montanhosa">
+                    <figcaption>Vegetação e montanhas ao horizonte.</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="botoes">
+                <label for="povodoar-slide1"></label>
+                <label for="povodoar-slide2"></label>
+                <label for="povodoar-slide3"></label>
+                <label for="povodoar-slide4"></label>
+                <label for="povodoar-slide5"></label>
+            </div>
+
+        </section>
+
+        <!-- CARROSSEL ESTILHAÇA-ME -->
+        <h1>Estilhaça-me</h1>
+        <section class="carrossel estilhacame">
+
+            <input type="radio" name="estilhacame" id="estilhacame-slide1" checked>
+            <input type="radio" name="estilhacame" id="estilhacame-slide2">
+            <input type="radio" name="estilhacame" id="estilhacame-slide3">
+            <input type="radio" name="estilhacame" id="estilhacame-slide4">
+            <input type="radio" name="estilhacame" id="estilhacame-slide5">
+
+            <div class="slides">
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/10/1000/600" alt="Principe Cruel - box completo">
+                    <figcaption>Uma bela paisagem cercada por floresta.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/29/1000/600" alt="Montanhas">
+                    <figcaption>Montanhas formando uma bela paisagem.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/42/1000/600" alt="Paisagem natural">
+                    <figcaption>Um cenário tranquilo em meio à natureza.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/1015/1000/600" alt="Montanhas e rio">
+                    <figcaption>Um rio passando entre grandes montanhas.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/1018/1000/600" alt="Paisagem montanhosa">
+                    <figcaption>Vegetação e montanhas ao horizonte.</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="botoes">
+                <label for="estilhacame-slide1"></label>
+                <label for="estilhacame-slide2"></label>
+                <label for="estilhacame-slide3"></label>
+                <label for="estilhacame-slide4"></label>
+                <label for="estilhacame-slide5"></label>
+            </div>
+
+        </section>
+
+        <!-- CARROSSEL - A EMPREGADA -->
+        <h1>A Empregada</h1>
+        <section class="carrossel aempregada">
+
+            <input type="radio" name="aempregada" id="aempregada-slide1" checked>
+            <input type="radio" name="aempregada" id="aempregada-slide2">
+            <input type="radio" name="aempregada" id="aempregada-slide3">
+            <input type="radio" name="aempregada" id="aempregada-slide4">
+            <input type="radio" name="aempregada" id="aempregada-slide5">
+
+            <div class="slides">
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/10/1000/600" alt="Principe Cruel - box completo">
+                    <figcaption>Uma bela paisagem cercada por floresta.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/29/1000/600" alt="Montanhas">
+                    <figcaption>Montanhas formando uma bela paisagem.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/42/1000/600" alt="Paisagem natural">
+                    <figcaption>Um cenário tranquilo em meio à natureza.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/1015/1000/600" alt="Montanhas e rio">
+                    <figcaption>Um rio passando entre grandes montanhas.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/1018/1000/600" alt="Paisagem montanhosa">
+                    <figcaption>Vegetação e montanhas ao horizonte.</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="botoes">
+                <label for="aempregada-slide1"></label>
+                <label for="aempregada-slide2"></label>
+                <label for="aempregada-slide3"></label>
+                <label for="aempregada-slide4"></label>
+                <label for="aempregada-slide5"></label>
+            </div>
+
+        </section>
+
+        <!-- CARROSSEL - HARRY POTTER -->
+
+        <h1>Harry Potter</h1>    
+        <section class="carrossel harrypotter">
+
+            <input type="radio" name="harrypotter" id="harrypotter-slide1" checked>
+            <input type="radio" name="harrypotter" id="harrypotter-slide2">
+            <input type="radio" name="harrypotter" id="harrypotter-slide3">
+            <input type="radio" name="harrypotter" id="harrypotter-slide4">
+            <input type="radio" name="harrypotter" id="harrypotter-slide5">
+
+            <div class="slides">
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/10/1000/600" alt="Principe Cruel - box completo">
+                    <figcaption>Uma bela paisagem cercada por floresta.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/29/1000/600" alt="Montanhas">
+                    <figcaption>Montanhas formando uma bela paisagem.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/42/1000/600" alt="Paisagem natural">
+                    <figcaption>Um cenário tranquilo em meio à natureza.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/1015/1000/600" alt="Montanhas e rio">
+                    <figcaption>Um rio passando entre grandes montanhas.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/1018/1000/600" alt="Paisagem montanhosa">
+                    <figcaption>Vegetação e montanhas ao horizonte.</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="botoes">
+                <label for="harrypotter-slide1"></label>
+                <label for="harrypotter-slide2"></label>
+                <label for="harrypotter-slide3"></label>
+                <label for="harrypotter-slide4"></label>
+                <label for="harrypotter-slide5"></label>
+            </div>
+
+        </section>
+
+        <!-- CARROSSEL - PERCY JACKSON -->
+
+        <h1> Percy Jackson</h1>
+        <section class="carrossel percyjackson">
+
+            <input type="radio" name="percyjackson" id="percyjackson-slide1" checked>
+            <input type="radio" name="percyjackson" id="percyjackson-slide2">
+            <input type="radio" name="percyjackson" id="percyjackson-slide3">
+            <input type="radio" name="percyjackson" id="percyjackson-slide4">
+            <input type="radio" name="percyjackson" id="percyjackson-slide5">
+
+            <div class="slides">
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/10/1000/600" alt="Principe Cruel - box completo">
+                    <figcaption>Uma bela paisagem cercada por floresta.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/29/1000/600" alt="Montanhas">
+                    <figcaption>Montanhas formando uma bela paisagem.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/42/1000/600" alt="Paisagem natural">
+                    <figcaption>Um cenário tranquilo em meio à natureza.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/1015/1000/600" alt="Montanhas e rio">
+                    <figcaption>Um rio passando entre grandes montanhas.</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="https://picsum.photos/id/1018/1000/600" alt="Paisagem montanhosa">
+                    <figcaption>Vegetação e montanhas ao horizonte.</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="botoes">
+                <label for="percyjackson-slide1"></label>
+                <label for="percyjackson-slide2"></label>
+                <label for="percyjackson-slide3"></label>
+                <label for="percyjackson-slide4"></label>
+                <label for="percyjackson-slide5"></label>
+            </div>
+
+        </section>
+
+        <!-- CARROSSEL - SENHOR DOS ANÉIS -->
+
+        <h1> Senhor do anéis</h1>
+        <section class="carrossel senhordosaneis">
+
+            <input type="radio" name="senhordosaneis" id="senhordosaneis-slide1" checked>
+            <input type="radio" name="senhordosaneis" id="senhordosaneis-slide2">
+            <input type="radio" name="senhordosaneis" id="senhordosaneis-slide3">
+            <input type="radio" name="senhordosaneis" id="senhordosaneis-slide4">
+            <input type="radio" name="senhordosaneis" id="senhordosaneis-slide5">
 
             <div class="slides">
 
 
                 <figure class="slide">
-
-                    <img
-                        src="https://picsum.photos/id/10/1000/600"
-                        alt="Floresta"
-                    >
-
-                    <figcaption>
-                        Uma bela paisagem cercada por floresta.
-                    </figcaption>
-
+                    <img src="https://picsum.photos/id/10/1000/600" alt="Principe Cruel - box completo">
+                    <figcaption>Uma bela paisagem cercada por floresta.</figcaption>
                 </figure>
 
-
                 <figure class="slide">
-
-                    <img
-                        src="https://picsum.photos/id/29/1000/600"
-                        alt="Montanhas"
-                    >
-
-                    <figcaption>
-                        Montanhas formando uma bela paisagem.
-                    </figcaption>
-
+                    <img src="https://picsum.photos/id/29/1000/600" alt="Montanhas">
+                    <figcaption>Montanhas formando uma bela paisagem.</figcaption>
                 </figure>
 
-
                 <figure class="slide">
-
-                    <img
-                        src="https://picsum.photos/id/42/1000/600"
-                        alt="Paisagem natural"
-                    >
-
-                    <figcaption>
-                        Um cenário tranquilo em meio à natureza.
-                    </figcaption>
-
+                    <img src="https://picsum.photos/id/42/1000/600" alt="Paisagem natural">
+                    <figcaption>Um cenário tranquilo em meio à natureza.</figcaption>
                 </figure>
 
-
                 <figure class="slide">
-
-                    <img
-                        src="https://picsum.photos/id/1015/1000/600"
-                        alt="Montanhas e rio"
-                    >
-
-                    <figcaption>
-                        Um rio passando entre grandes montanhas.
-                    </figcaption>
-
+                    <img src="https://picsum.photos/id/1015/1000/600" alt="Montanhas e rio">
+                    <figcaption>Um rio passando entre grandes montanhas.</figcaption>
                 </figure>
 
-
                 <figure class="slide">
-
-                    <img
-                        src="https://picsum.photos/id/1018/1000/600"
-                        alt="Paisagem montanhosa"
-                    >
-
-                    <figcaption>
-                        Vegetação e montanhas ao horizonte.
-                    </figcaption>
-
+                    <img src="https://picsum.photos/id/1018/1000/600" alt="Paisagem montanhosa">
+                    <figcaption>Vegetação e montanhas ao horizonte.</figcaption>
                 </figure>
 
             </div>
 
+            <div class="botoes">
+                <label for="senhordosaneis-slide1"></label>
+                <label for="senhordosaneis-slide2"></label>
+                <label for="senhordosaneis-slide3"></label>
+                <label for="senhordosaneis-slide4"></label>
+                <label for="senhordosaneis-slide5"></label>
+            </div>
+
         </section>
-
-
-        <!-- BOTÕES VISÍVEIS -->
-
-        <div class="botoes">
-
-            <label for="slide1"></label>
-
-            <label for="slide2"></label>
-
-            <label for="slide3"></label>
-
-            <label for="slide4"></label>
-
-            <label for="slide5"></label>
-
-        </div>
 
     </main>
 

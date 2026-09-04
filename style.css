@@ -1,169 +1,264 @@
-        :root {
-            --cor-principal: #800020;
-            --cor-secundaria: #a52a4a;
-            --cor-clara: #f8e8ec;
-            --cor-escura: #4b0013;
-            --cor-branca: #ffffff;
-        }
+:root {
+    --cor-principal: #18324A;
+    --cor-secundaria: #b4c2ca;
+    --cor-clara: #3D7894;
+    --cor-escura: #8FB8C9;
+    --cor-branca: #EAF2F5;
+}
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: var(--cor-clara);
-            color: var(--cor-escura);
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-clara);
+    color: var(--cor-escura);
+}
 
-        header {
-            background-color: var(--cor-principal);
-            color: var(--cor-branca);
-            text-align: center;
-            padding: 30px;
-        }
+header {
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 30px;
+}
 
-        main {
-            width: 90%;
-            max-width: 900px;
-            margin: 40px auto;
-        }
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
 
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-
-        /* ESCONDE OS BOTÕES DE RADIO */
-
-        input[type="radio"] {
-            display: none;
-        }
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 
-        /* ÁREA VISÍVEL DO CARROSSEL */
+/* ESCONDE OS BOTÕES DE RADIO */
 
-        .carrossel {
-            overflow: hidden;
-
-            border: 5px solid var(--cor-principal);
-            border-radius: 15px;
-        }
+input[type="radio"] {
+    display: none;
+}
 
 
-        /* CONJUNTO DOS SLIDES */
+/* ÁREA VISÍVEL DO CARROSSEL */
 
-        .slides {
-            display: flex;
+.carrossel {
+    position: relative;
 
-            width: 500%;
+    overflow: hidden;
 
-            transition: transform 0.5s ease;
-        }
+    border: 5px solid var(--cor-principal);
+    border-radius: 15px;
 
-
-        /* CADA SLIDE */
-
-        .slide {
-            width: 20%;
-            flex-shrink: 0;
-        }
+    margin-bottom: 40px;
+}
 
 
-        .slide img {
-            width: 100%;
-            height: 450px;
+/* CONJUNTO DOS SLIDES */
 
-            object-fit: cover;
+.slides {
+    display: flex;
 
-            display: block;
-        }
+    width: 500%;
 
-
-        .slide figcaption {
-            background-color: var(--cor-principal);
-            color: white;
-
-            text-align: center;
-
-            padding: 15px;
-        }
+    transition: transform 0.5s ease;
+}
 
 
-        /* MOVIMENTAÇÃO DOS SLIDES */
+/* CADA SLIDE */
 
-        #slide1:checked ~ .carrossel .slides {
-            transform: translateX(0);
-        }
-
-        #slide2:checked ~ .carrossel .slides {
-            transform: translateX(-20%);
-        }
-
-        #slide3:checked ~ .carrossel .slides {
-            transform: translateX(-40%);
-        }
-
-        #slide4:checked ~ .carrossel .slides {
-            transform: translateX(-60%);
-        }
-
-        #slide5:checked ~ .carrossel .slides {
-            transform: translateX(-80%);
-        }
+.slide {
+    width: 20%;
+    flex-shrink: 0;
+}
 
 
-        /* BOTÕES */
+.slide img {
+    width: 100%;
+    height: 450px;
 
-        .botoes {
-            display: flex;
+    object-fit: cover;
 
-            justify-content: center;
-
-            gap: 10px;
-
-            margin-top: 20px;
-        }
+    display: block;
+}
 
 
-        .botoes label {
-            width: 20px;
-            height: 20px;
+.slide figcaption {
+    background-color: var(--cor-principal);
+    color: white;
 
-            background-color: var(--cor-secundaria);
+    text-align: center;
 
-            border-radius: 50%;
-
-            cursor: pointer;
-        }
+    padding: 15px;
+}
 
 
-        .botoes label:hover {
-            background-color: var(--cor-escura);
-        }
+/* MOVIMENTAÇÃO DOS SLIDES - O POVO DO AR */
+
+#povodoar-slide1:checked ~ .slides { 
+    transform: translateX(0); 
+}
+#povodoar-slide2:checked ~ .slides {
+     transform: translateX(-20%); 
+    }
+#povodoar-slide3:checked ~ .slides { 
+    transform: translateX(-40%); 
+}
+#povodoar-slide4:checked ~ .slides { 
+    transform: translateX(-60%); 
+}
+#povodoar-slide5:checked ~ .slides { 
+    transform: translateX(-80%); 
+}
 
 
-        footer {
-            background-color: var(--cor-escura);
-            color: white;
+/* MOVIMENTAÇÃO DOS SLIDES - ESTILHAÇA-ME */
 
-            text-align: center;
+#estilhacame-slide1:checked ~ .slides { 
+    transform: translateX(0); 
+}
+#estilhacame-slide2:checked ~ .slides { 
+    transform: translateX(-20%); 
+}
+#estilhacame-slide3:checked ~ .slides { 
+    transform: translateX(-40%); 
+}
+#estilhacame-slide4:checked ~ .slides { 
+    transform: translateX(-60%); 
+}
+#estilhacame-slide5:checked ~ .slides { 
+    transform: translateX(-80%); 
+}
 
-            padding: 25px;
 
-            margin-top: 40px;
-        }
+/* MOVIMENTAÇÃO DOS SLIDES - A EMPREGADA */
+
+#aempregada-slide1:checked ~ .slides { 
+    transform: translateX(0); 
+}
+#aempregada-slide2:checked ~ .slides { 
+    transform: translateX(-20%); 
+}
+#aempregada-slide3:checked ~ .slides { 
+    transform: translateX(-40%);
+}
+#aempregada-slide4:checked ~ .slides { 
+    transform: translateX(-60%); 
+}
+#aempregada-slide5:checked ~ .slides { 
+    transform: translateX(-80%); 
+}
 
 
-        /* CELULAR */
+/* MOVIMENTAÇÃO DOS SLIDES - HARRY POTTER */
 
-        @media (max-width: 700px) {
+#harrypotter-slide1:checked ~ .slides { 
+    transform: translateX(0); 
+}
+#harrypotter-slide2:checked ~ .slides { 
+    transform: translateX(-20%); 
+}
+#harrypotter-slide3:checked ~ .slides { 
+    transform: translateX(-40%);
+ }
+#harrypotter-slide4:checked ~ .slides { 
+    transform: translateX(-60%); 
+}
+#harrypotter-slide5:checked ~ .slides { 
+    transform: translateX(-80%); 
+}
 
-            .slide img {
-                height: 280px;
-            }
 
-        }
+/* MOVIMENTAÇÃO DOS SLIDES - PERCY JACKSON */
+
+#percyjackson-slide1:checked ~ .slides { 
+    transform: translateX(0); 
+}
+#percyjackson-slide2:checked ~ .slides { 
+    transform: translateX(-20%); 
+}
+#percyjackson-slide3:checked ~ .slides { 
+    transform: translateX(-40%); 
+}
+#percyjackson-slide4:checked ~ .slides { 
+    transform: translateX(-60%);
+ }
+#percyjackson-slide5:checked ~ .slides { 
+    transform: translateX(-80%); 
+}
+
+
+/* MOVIMENTAÇÃO DOS SLIDES - SENHOR DOS ANÉIS */
+
+#senhordosaneis-slide1:checked ~ .slides { 
+    transform: translateX(0); 
+}
+#senhordosaneis-slide2:checked ~ .slides { 
+    transform: translateX(-20%); 
+}
+#senhordosaneis-slide3:checked ~ .slides { 
+    transform: translateX(-40%); 
+}
+#senhordosaneis-slide4:checked ~ .slides { 
+    transform: translateX(-60%); 
+}
+#senhordosaneis-slide5:checked ~ .slides { 
+    transform: translateX(-80%); 
+}
+
+
+/* BOTÕES */
+
+.botoes {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+.botoes label {
+    width: 20px;
+    height: 20px;
+
+    background-color: var(--cor-secundaria);
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+
+.botoes label:hover {
+    background-color: var(--cor-escura);
+}
+
+
+footer {
+    background-color: var(--cor-escura);
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .slide img {
+        height: 280px;
+    }
+
+}
