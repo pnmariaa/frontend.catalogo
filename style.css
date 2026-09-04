@@ -1,264 +1,169 @@
-:root {
-    --cor-principal: #18324A;
-    --cor-secundaria: #b4c2ca;
-    --cor-clara: #3D7894;
-    --cor-escura: #8FB8C9;
-    --cor-branca: #EAF2F5;
-}
+        :root {
+            --cor-principal:  #3B2318;
+            --cor-secundaria: #D9C2A3;
+            --cor-clara: #8C5E3C;
+            --cor-escura: #5C3A21;
+            --cor-branca: #F5EBDD;
+        }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--cor-clara);
-    color: var(--cor-escura);
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--cor-clara);
+            color: var(--cor-escura);
+        }
 
-header {
-    background-color: var(--cor-principal);
-    color: var(--cor-branca);
-    text-align: center;
-    padding: 30px;
-}
+        header {
+            background-color: var(--cor-principal);
+            color: var(--cor-branca);
+            text-align: center;
+            padding: 30px;
+        }
 
-main {
-    width: 90%;
-    max-width: 900px;
-    margin: 40px auto;
-}
+        main {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+        }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
 
-/* ESCONDE OS BOTÕES DE RADIO */
+        /* ESCONDE OS BOTÕES DE RADIO */
 
-input[type="radio"] {
-    display: none;
-}
+        input[type="radio"] {
+            display: none;
+        }
 
 
-/* ÁREA VISÍVEL DO CARROSSEL */
+        /* ÁREA VISÍVEL DO CARROSSEL */
 
-.carrossel {
-    position: relative;
+        .carrossel {
+            overflow: hidden;
 
-    overflow: hidden;
+            border: 5px solid var(--cor-principal);
+            border-radius: 15px;
+        }
 
-    border: 5px solid var(--cor-principal);
-    border-radius: 15px;
 
-    margin-bottom: 40px;
-}
+        /* CONJUNTO DOS SLIDES */
 
+        .slides {
+            display: flex;
 
-/* CONJUNTO DOS SLIDES */
+            width: 500%;
 
-.slides {
-    display: flex;
+            transition: transform 0.5s ease;
+        }
 
-    width: 500%;
 
-    transition: transform 0.5s ease;
-}
-
-
-/* CADA SLIDE */
-
-.slide {
-    width: 20%;
-    flex-shrink: 0;
-}
+        /* CADA SLIDE */
 
+        .slide {
+            width: 20%;
+            flex-shrink: 0;
+        }
 
-.slide img {
-    width: 100%;
-    height: 450px;
-
-    object-fit: cover;
-
-    display: block;
-}
-
-
-.slide figcaption {
-    background-color: var(--cor-principal);
-    color: white;
-
-    text-align: center;
-
-    padding: 15px;
-}
-
-
-/* MOVIMENTAÇÃO DOS SLIDES - O POVO DO AR */
-
-#povodoar-slide1:checked ~ .slides { 
-    transform: translateX(0); 
-}
-#povodoar-slide2:checked ~ .slides {
-     transform: translateX(-20%); 
-    }
-#povodoar-slide3:checked ~ .slides { 
-    transform: translateX(-40%); 
-}
-#povodoar-slide4:checked ~ .slides { 
-    transform: translateX(-60%); 
-}
-#povodoar-slide5:checked ~ .slides { 
-    transform: translateX(-80%); 
-}
-
-
-/* MOVIMENTAÇÃO DOS SLIDES - ESTILHAÇA-ME */
-
-#estilhacame-slide1:checked ~ .slides { 
-    transform: translateX(0); 
-}
-#estilhacame-slide2:checked ~ .slides { 
-    transform: translateX(-20%); 
-}
-#estilhacame-slide3:checked ~ .slides { 
-    transform: translateX(-40%); 
-}
-#estilhacame-slide4:checked ~ .slides { 
-    transform: translateX(-60%); 
-}
-#estilhacame-slide5:checked ~ .slides { 
-    transform: translateX(-80%); 
-}
-
-
-/* MOVIMENTAÇÃO DOS SLIDES - A EMPREGADA */
-
-#aempregada-slide1:checked ~ .slides { 
-    transform: translateX(0); 
-}
-#aempregada-slide2:checked ~ .slides { 
-    transform: translateX(-20%); 
-}
-#aempregada-slide3:checked ~ .slides { 
-    transform: translateX(-40%);
-}
-#aempregada-slide4:checked ~ .slides { 
-    transform: translateX(-60%); 
-}
-#aempregada-slide5:checked ~ .slides { 
-    transform: translateX(-80%); 
-}
-
-
-/* MOVIMENTAÇÃO DOS SLIDES - HARRY POTTER */
-
-#harrypotter-slide1:checked ~ .slides { 
-    transform: translateX(0); 
-}
-#harrypotter-slide2:checked ~ .slides { 
-    transform: translateX(-20%); 
-}
-#harrypotter-slide3:checked ~ .slides { 
-    transform: translateX(-40%);
- }
-#harrypotter-slide4:checked ~ .slides { 
-    transform: translateX(-60%); 
-}
-#harrypotter-slide5:checked ~ .slides { 
-    transform: translateX(-80%); 
-}
-
-
-/* MOVIMENTAÇÃO DOS SLIDES - PERCY JACKSON */
-
-#percyjackson-slide1:checked ~ .slides { 
-    transform: translateX(0); 
-}
-#percyjackson-slide2:checked ~ .slides { 
-    transform: translateX(-20%); 
-}
-#percyjackson-slide3:checked ~ .slides { 
-    transform: translateX(-40%); 
-}
-#percyjackson-slide4:checked ~ .slides { 
-    transform: translateX(-60%);
- }
-#percyjackson-slide5:checked ~ .slides { 
-    transform: translateX(-80%); 
-}
-
-
-/* MOVIMENTAÇÃO DOS SLIDES - SENHOR DOS ANÉIS */
-
-#senhordosaneis-slide1:checked ~ .slides { 
-    transform: translateX(0); 
-}
-#senhordosaneis-slide2:checked ~ .slides { 
-    transform: translateX(-20%); 
-}
-#senhordosaneis-slide3:checked ~ .slides { 
-    transform: translateX(-40%); 
-}
-#senhordosaneis-slide4:checked ~ .slides { 
-    transform: translateX(-60%); 
-}
-#senhordosaneis-slide5:checked ~ .slides { 
-    transform: translateX(-80%); 
-}
-
-
-/* BOTÕES */
-
-.botoes {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 10px;
-
-    margin-top: 20px;
-}
-
-
-.botoes label {
-    width: 20px;
-    height: 20px;
-
-    background-color: var(--cor-secundaria);
-
-    border-radius: 50%;
-
-    cursor: pointer;
-}
-
-
-.botoes label:hover {
-    background-color: var(--cor-escura);
-}
-
-
-footer {
-    background-color: var(--cor-escura);
-    color: white;
-
-    text-align: center;
-
-    padding: 25px;
-
-    margin-top: 40px;
-}
-
-
-/* CELULAR */
-
-@media (max-width: 700px) {
-
-    .slide img {
-        height: 280px;
-    }
-
-}
+
+        .slide img {
+            width: 100%;
+            height: 1000px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+        .slide figcaption {
+            background-color: var(--cor-principal);
+            color: white;
+
+            text-align: center;
+
+            padding: 15px;
+        }
+
+
+        /* MOVIMENTAÇÃO DOS SLIDES */
+
+        #slide1:checked ~ .carrossel .slides {
+            transform: translateX(0);
+        }
+
+        #slide2:checked ~ .carrossel .slides {
+            transform: translateX(-20%);
+        }
+
+        #slide3:checked ~ .carrossel .slides {
+            transform: translateX(-40%);
+        }
+
+        #slide4:checked ~ .carrossel .slides {
+            transform: translateX(-60%);
+        }
+
+        #slide5:checked ~ .carrossel .slides {
+            transform: translateX(-80%);
+        }
+
+
+        /* BOTÕES */
+
+        .botoes {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            margin-top: 20px;
+        }
+
+
+        .botoes label {
+            width: 20px;
+            height: 20px;
+
+            background-color: var(--cor-secundaria);
+
+            border-radius: 50%;
+
+            cursor: pointer;
+        }
+
+
+        .botoes label:hover {
+            background-color: var(--cor-escura);
+        }
+
+
+        footer {
+            background-color: var(--cor-escura);
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+
+            margin-top: 40px;
+        }
+
+
+        /* CELULAR */
+
+        @media (max-width: 700px) {
+
+            .slide img {
+                height: 280px;
+            }
+
+        }
