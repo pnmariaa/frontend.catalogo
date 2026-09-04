@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carrossel CSS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <h1>Galeria de Paisagens</h1>
+
+        <p>Carrossel feito apenas com HTML e CSS</p>
+
+    </header>
+
+
+    <main>
+
+        <h2>Conheça nossas paisagens</h2>
+
+
+        <!-- BOTÕES INVISÍVEIS -->
+
+        <input type="radio" name="carrossel" id="slide1" checked>
+
+        <input type="radio" name="carrossel" id="slide2">
+
+        <input type="radio" name="carrossel" id="slide3">
+
+        <input type="radio" name="carrossel" id="slide4">
+
+        <input type="radio" name="carrossel" id="slide5">
+
+
+        <!-- CARROSSEL -->
+
+        <section class="carrossel">
+
+            <div class="slides">
+
+
+                <figure class="slide">
+
+                    <img
+                        src="https://picsum.photos/id/10/1000/600"
+                        alt="Floresta"
+                    >
+
+                    <figcaption>
+                        Uma bela paisagem cercada por floresta.
+                    </figcaption>
+
+                </figure>
+
+
+                <figure class="slide">
+
+                    <img
+                        src="https://picsum.photos/id/29/1000/600"
+                        alt="Montanhas"
+                    >
+
+                    <figcaption>
+                        Montanhas formando uma bela paisagem.
+                    </figcaption>
+
+                </figure>
+
+
+                <figure class="slide">
+
+                    <img
+                        src="https://picsum.photos/id/42/1000/600"
+                        alt="Paisagem natural"
+                    >
+
+                    <figcaption>
+                        Um cenário tranquilo em meio à natureza.
+                    </figcaption>
+
+                </figure>
+
+
+                <figure class="slide">
+
+                    <img
+                        src="https://picsum.photos/id/1015/1000/600"
+                        alt="Montanhas e rio"
+                    >
+
+                    <figcaption>
+                        Um rio passando entre grandes montanhas.
+                    </figcaption>
+
+                </figure>
+
+
+                <figure class="slide">
+
+                    <img
+                        src="https://picsum.photos/id/1018/1000/600"
+                        alt="Paisagem montanhosa"
+                    >
+
+                    <figcaption>
+                        Vegetação e montanhas ao horizonte.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTÕES VISÍVEIS -->
+
+        <div class="botoes">
+
+            <label for="slide1"></label>
+
+            <label for="slide2"></label>
+
+            <label for="slide3"></label>
+
+            <label for="slide4"></label>
+
+            <label for="slide5"></label>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>Desenvolvido para estudo de HTML e CSS</p>
+
+    </footer>
+
+</body>
+
+</html>
